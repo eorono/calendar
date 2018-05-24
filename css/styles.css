@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 50px 0;
+	text-align: center;
+    font-family: 'Lato-Medium';
+}
+
+#calendar {
+	text-align: center;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#calendar.errors {
+    padding: 15px;
+    background-color: #ffc7c7;
+    -webkit-border-radius: 4px;  
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+#calendar > table {
+    width: 100%;
+    border-color: transparent;
+    table-layout: fixed;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.month-jump {
+    height: 20px;
+}
+
+table th,
+table td {
+    height: 35px;
+    border: 0;	
+}
+
+.invalid-day {
+	background-color: gray;
+}
+
+.input {
+	width: 300px;
+	display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group > .title {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-group > .title > label {
+    font-size: 13px;
+    line-height: 34px;
+}
+
+.form-group > .input {
+    width: 60%;
+    display: inline-block;
+}
+
+.form-group > .input > input {
+    width: 100%;
+    padding: 4px 5px;
+    line-height: 15px;
+    height: 34px;
+    font-size: 15px;
+
+    border: solid 2px #4d4d4d;
+    -webkit-border-radius: 4px;  
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    outline: none;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.button {
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 4px 5px;
+    font-size: 15px;
+
+    background-color: #250fec;
+
+    border: solid 2px #250fec;
+    -webkit-border-radius: 4px;  
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    outline: none;
+
+    line-height: 15px;
+    height: 34px;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #ea6c18;
+}
+
+.button:active {
+    background-color: #ea6c18;
+    color: #FFFFFF;
+}
+
+.valid-day {
+    background-color: #c8df99;
+}
+
+.weekend {
+    background-color: yellow;
+}
+
+.holiday {
+    background-color: #ea6c18;
+}
+
+.invalid-day {
+    background-color: #cdcdcd;
+}
+
+.month-name {
+    background-color: #ecf6d2;
+}
+
+#calendar > ul {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+#calendar table .month-jump:last-child {
+    height: 0;
+}
